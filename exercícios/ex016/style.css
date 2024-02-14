@@ -1,0 +1,30 @@
+@charset "UTF-8"
+
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;/*serve para deixar a borda mais grande, n sei explicar, quando vc usar o "to top" acaba bugando ent leva em consideração esse comando*/
+}
+body{
+    background-image: linear-gradient(to right,#6E675F,#A39594,#EDEBD7 ); 
+    /*serve para fazer degradê com cores*/
+}
+main{
+    background-color: white;
+    box-shadow: 5px 5px 15px #887c7c88; /*serve para fazer sombra primeiro parâmetro 5px é pro lado, o segundo 5px é para baixo e o último 15px é para espalhar a sombra*/
+    border-radius: 10px; /*serve para deixa as bordas sem pontas usa px*/
+    width: 600px;/*largura usa o px*/
+    padding: 10px;/*serve para deixar a borda com expaço*/
+    margin: auto;/*centraliza o onde o texto foi excrito, Burro não confunda com center text*/
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    color: #22031F;
+    text-shadow: 1px 1px 2px #0e030c8c;/*serve para colocar sombra no seu texto, mesma cois primeiro px pro lado segundo para baixo e terceiro espalha*/
+}
+h2{
+    color: #151E3F;
+    text-shadow: 1px 1px 2px #0b102296;
+}

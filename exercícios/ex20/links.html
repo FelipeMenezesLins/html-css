@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: arial, helvetica, sans-serif;
+            background-color: black;
+        }
+        a { text-decoration:none;
+            color: white;
+        }
+        h1{
+            color: white;
+        }
+        .canal:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        .repositorio:hover {
+            color: purple;
+            text-decoration: underline;
+        }
+        .canal::after{
+            content: '[link]';
+            color:red
+        }
+        .repositorio::before {
+              content: '[link]';
+              color: purple;
+        }
+
+        /*Pode usar pseudo classes com pseudo elementos, como before ou after::*/
+         .repositorio:active{
+            color: red;
+         }
+         :visited {
+            color:aqua
+         }
+         /*active serve para indicar quando um link está sendo clicado*/
+         /* . = class
+            : = pseudo class
+            # = id (indentificação)
+            > = filho, heirarquia.
+            :: = pseudo elemento.
+            */
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+<ul>
+    <li>
+        <a class="canal" href="https://www.youtube.com/channel/UClWIqKBy6Y1djOhXJiFZu_A" target="_blank" rel="external">canal do youtube</a>
+    </li>
+
+    <li>
+        <a class="repositorio" href="https://github.com/sandyejunior" target="_blank" rel="external">github</a>
+    </li>
+</ul>
+</body>
+</html>

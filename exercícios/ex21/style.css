@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+
+body {
+   font-family: 'Lugrasimo', sans-serif; 
+    background-image: linear-gradient(to right, #272838, #5D536B );
+    color: white;
+    font: justify;
+    }
+
+ header {
+    color: #F18F01;
+ }
+ h1 {
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.938); /*pode colocar sombra nas caixa de texto por aqui ou pelo devtools*/
+border-radius: 0px 20px;
+ }
+ 
+   ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px
+ }
+
+ a {
+   color: white;
+   text-decoration:none
+ }
+
+ a:hover {
+   color:#F18F01;
+ }
+
+ .center {
+   padding: 20px;
+ }
+
+ footer img {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+ }
+
+ footer {
+ display:flex;
+ justify-content: center;
+ height: 150px;
+ width: 150px;
+ padding-top: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+ padding-left: 20px;
+ border-width: 10px;
+ border-style: solid;
+ border-color: black;
+ margin: 20px;
+ outline: solid;
+ border-radius: 50%;
+ margin:auto;
+   }
+
+   footer a{
+    text-align: center;
+    margin: 15px;
+   }
+ 
+ 

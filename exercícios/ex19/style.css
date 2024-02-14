@@ -1,0 +1,39 @@
+/* Html é id = Css é #
+   Hrml é class = Css é . */
+
+@charset "UTF-8";
+body{
+    font-family: arial, helvetica, sans-serif;
+    background-color: rgb(166, 166, 250);
+    font-size: 20px
+}
+
+h1#principal {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:  rgba(76, 76, 117, 0.692) 
+}
+ h1 {
+    color:rgb(4, 63, 63);
+ }
+
+ p {
+    text-align: justify;
+ }
+
+ .destaque {
+ background-color:black;
+ }
+
+.basico {
+ color: rgb(121, 199, 121);
+}
+
+.intermediario {
+color: rgb(208, 211, 31);
+}
+
+.avancado {
+    color: rgb(199, 121, 121)
+}
