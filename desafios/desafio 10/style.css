@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+
+body {
+    margin: 0px;
+    background-image: linear-gradient(to bottom, #496DDB, #5FB0B7);
+    background-attachment: fixed;
+}
+header {
+    background-image: linear-gradient(to bottom, #22162B, #451F55)
+}
+
+header>h1 {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Lugrasimo', cursive;
+    color: white;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+section>h2 {
+    color: blue;
+    font-family: arial, helvetica, sans-serif;
+    background-color: #496ddb50;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 6px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    }
+
+   section>h1 {
+    margin: 10px 5px;
+    font-family: 'Lugrasimo', serif;
+    color: blue;
+   }
+
+   p {
+    font-family: arial, helvetica, sans-serif;
+    text-align:justify;
+   }
+
+   a:hover {
+    color: orangered;
+   }
+
+   main {
+    background-color: white;
+    margin: 0px 15px;
+    border-radius: 5px;
+    padding: 5px;
+   }
+
+  .center {
+    margin: 20px;
+  }
+
+  .video {
+    height: 315px;
+    width: 560px;
+    padding: 5px;
+    
+  }
+  .background{
+    background-color:#496ddba2;
+    border-radius: 5px;
+  }
+
+  .final>h2{
+   color: blue;
+   text-align: left;
+   background-color: #496ddb63;
+   border-radius: 5px;
+  }
+
+  .right>p {
+    text-align: right;
+    padding: 0px 20px;
+  }
