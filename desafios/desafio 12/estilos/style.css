@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lugrasimo&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+:root {
+    --fonte01:verdana, cursive, helvetica, serif;
+
+    --fonte02:"Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal; 
+    
+    --fonte03:"Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
 *{
     margin:0px;
     padding:0px;
@@ -8,6 +25,7 @@
 html,body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family:var(--fonte01);
 }
 
 header {
@@ -19,11 +37,14 @@ header {
 header h1 {
 padding-top:50px;
 font-variant:small-caps;
+font-family:var(--fonte03);
+font-size: 8vw;
 }
 
-header a, footer a {
+header a {
     color:white;
     text-decoration:none;
+    font-size: 3vw;
 }
 
 header a:hover, footer a:hover {
@@ -32,11 +53,20 @@ header a:hover, footer a:hover {
 
 header p {
     padding-bottom: 30px;
+    font-size: 3vw;
 }
 
 section {
     line-height: 2em;
     padding-left: 20px;
+    font-family: var(--fonte02);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom:10vh;
+}
+
+section p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -44,10 +74,31 @@ section.normal {
     color:black;
 }
 
-section.imagem>p {
-    background-color:rgba(66, 66, 66, 0.452);
+section.imagem {
+    background-color:black;
+    background-size:cover;
+    box-shadow: inset 4px 6px 13p rgba(0, 0, 0, 0.274);
+    padding:15px;
     color:white;
-    width:300px;
+}
+
+section.imagem>p {
+    background-color:rgba(53, 52, 52, 0.842);
+    display:inline-block;
+    padding: 8px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.726);
+}
+
+section#img01 {
+    background-image:url('../imagens/background001.jpg');
+    background-position: right center;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-attachment:fixed;
 }
 
 footer {
@@ -59,5 +110,7 @@ footer {
 
 footer a {
     margin: 2px;
+    color:white;
+    text-decoration:none;
 }
 
