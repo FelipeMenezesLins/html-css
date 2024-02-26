@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+
+       body {
+        font-family:arial,helvetica,sans-serif;
+       }
+
+        table {
+            width:600px;
+            border-collapse:collapse;
+            position:relative;
+        }
+
+        caption {
+            background-color:rgb(161, 160, 160);
+            font-size: 1.5em;
+            color:white;
+        }
+
+        thead {
+            color:white;
+            background-color:black;
+            border: 1px solid black;
+        }
+
+        th {
+            font-weight: bolder;
+            padding:10px;
+            font-size:1.1em
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.num {
+           text-align: right;
+        }
+
+        tfoot {
+            background-color: black;
+            border: 1px solid black;
+            color:white;
+        }
+
+         tbody>tr:nth-child(2n-1) {
+            background-color:rgb(218, 217, 217);
+            font-weight:bolder;
+         } /*Efeito listrado,tem a pseudo class: nth-child(2n-1) pode colocar odd e even tbm, to com preguiça de explicar então vê ai*/
+
+         thead>tr>th {
+            position: sticky;
+            background-color:black;
+            top:-1px;
+         } /*serve para deixar o cabeçalho fixo, tem que colocar na table, position: relative;*/
+
+    </style>
+</head>
+<body>
+    <h1>Como trabalhar com tabelas grandes</h1>
+    <table>
+        <caption>População no Brasil</caption> <!--Serve com h1 pra tabela-->
+        <thead>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width:100px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    São Paulo
+                </td>
+                <td class="num">
+                    44 411 238
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Minas Gerais
+                </td>
+                <td class="num">
+                    20 538 718
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Rio de Janeiro
+                </td>
+                <td class="num">
+                    16 054 524
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bahia
+                </td>
+                <td class="num">
+                    14 141 626
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Paraná
+                </td>
+                <td class="num">
+                    11 444 380	
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Rio Grande do Sul
+                </td>
+                <td class="num">
+                    10 882 965
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pernanbuco
+                </td>
+                <td class="num">
+                    9 058 931	
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Ceará
+                </td>
+                <td class="num">
+                    8 794 957
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pará
+                </td>
+                <td class="num">
+                    8 121 025
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Santa Catarina
+                </td>
+                <td class="num">
+                    7 610 361
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Goiás
+                </td>
+                <td class="num">
+                    7 056 495	
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maranhão
+                </td>
+                <td class="num">
+                    6 775 805	
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Paraíba
+                </td>
+                <td class="num">
+                    3 974 687
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Amazonas
+                </td>
+                <td class="num">
+                    3 941 613
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Espirito Santo
+                </td>
+                <td class="num">
+                    3 833 712	
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mato Grosso
+                </td>
+                <td class="num">
+                    3 658 649
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">
+                    <strong>Total de pessoas no Brasil :</strong>
+                </th>
+                <td class="num">
+                    <strong>
+                      210 433 812 
+                    </strong>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure, ut pariatur aspernatur, officiis in iste ipsa corrupti quo deserunt harum quisquam? Id beatae, harum laudantium qui inventore tempore quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis repellendus odit ut provident quasi aliquid iusto dignissimos, commodi natus rem necessitatibus veritatis dolore, pariatur sapiente ducimus quisquam tempore excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo debitis ex, animi quidem, nisi aperiam molestias dolore sunt quasi repudiandae soluta cumque vero accusamus recusandae sequi, corporis ad in? Similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptates non quos illo at dolorum id iste. Natus molestiae fugiat reprehenderit voluptate qui officiis delectus! Praesentium provident saepe unde numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda totam excepturi ducimus veritatis asperiores ipsum, dicta ea, adipisci quod quibusdam ad. Totam nemo nisi quaerat eaque, doloribus sit mollitia voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim quia praesentium officiis neque corrupti quos asperiores fugiat accusantium suscipit voluptas repellendus necessitatibus facere, magnam assumenda dignissimos sapiente amet. Eum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum expedita quibusdam tenetur soluta eum nostrum, quasi deleniti nam similique repellat ut nesciunt officiis distinctio voluptas quas itaque, blanditiis amet et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nesciunt saepe inventore unde voluptatum maiores? Sunt porro, laboriosam soluta reiciendis eveniet dolorem totam nulla sed adipisci harum recusandae veritatis alias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquam consequatur eius voluptas aliquid fugiat laudantium officia, tenetur fugit exercitationem consequuntur numquam labore qui, doloribus dolorum reprehenderit iure recusandae tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente in ducimus nisi vel odit similique et, ab fuga repellendus necessitatibus aspernatur corrupti commodi labore voluptatibus molestiae! Temporibus, soluta dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, cumque nisi? Explicabo, adipisci maxime, quod magni dolore fugit repellendus voluptatibus mollitia repellat, doloribus eos harum est corporis a eaque accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi fuga adipisci inventore minima. Obcaecati corrupti culpa deleniti fugiat! Inventore qui commodi ad temporibus maiores deleniti, maxime velit adipisci ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestiae nisi expedita? Fugiat velit sint blanditiis neque dolorem fugit? Aliquid laudantium dolorum exercitationem ea quod commodi eius quisquam natus sapiente.</p>
+</body>
+</html>
