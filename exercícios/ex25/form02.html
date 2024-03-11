@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusr">Usuário</label>
+
+            <input type="text" name="usr" id="iusr" required minlength="5" maxlength="30" placeholder="nome de Usuário" size="30">
+            <!--'required', serve para preencher um campo obrigatório, 'minlength' serve para colocar o mínimo de caracteres, 'maxlength' mesma coisa só que é o máximo, 'placeholder' serve para deixar um texto na caixa que iformativo, 'size' decide o tamanho da caixa de texto de acordo com as caracteres-->
+        </p>
+
+        <p>
+            <label for="isenha">Senha</label>
+            
+            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha" autocomplete="new-password"> <!--password serve para senhas, e o autocomplete se estiver ligado serve para lembrar das suas senhas-->
+        </p>
+        <input type="submit" value="Enviar"> <!--serve para enviar dados para um script-->
+        <input type="reset" value="Limpar">
+        <!--serve para limpar dados ou reseta-->
+    </form>
+</body>
+</html>

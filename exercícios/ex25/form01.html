@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        * {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando o primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--method, post serve para esconder os dados de um formulário na url mas vc consegue ver os dados no dev tols, get n esconde e é o padrão--> <!--aprenda Https-->
+        
+        <!--autocomplete, serve para o navegador completar o nome pra vc, tem o on e off, on é pra mandar e off não-->
+
+         <!--action serve para mandar os dados de um formmulário para uma lingugem de programação ou  se preferir um script -->
+        <p>
+            <label for="inome">name:</label> <!--label é muito importante para a criação de formulários, ele serve para fazer a ligação e a indentificação do item, isso não só facilita de se indentificar como ajuda os navegadores e sistemas de busca, então sempre que for criar um formulário coloque LABEL-->
+
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">sobrenome:  </label>
+
+            <input type="text" name="nome" id="isobrenome">
+
+        </p> <!--coloquei inome para n confundir-->
+        <p><input type="submit" value="enviar"></p>
+    </form>
+</body>
+</html>
