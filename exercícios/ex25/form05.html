@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Checkbox e Radio</h1>
+
+    <form action="cadastro.php">
+        <fieldset> <!--No radio só pode escolher um, então para não complicar, coloque o mesmo name, e não id-->
+            <legend>sexo</legend>
+            <input type="radio" name="mas" id="imas">
+            <label for="imas">Masculino</label>
+
+            <input type="radio" name="mas" id="ifem">
+            <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+           <input type="checkbox" name="fut" id="ifut">
+           <label for="ifut">Futebol</label><br>
+
+            <input type="checkbox" name="bas" id="ibas" checked> <!--checked, já deixa marcado a opção-->
+            <label for="ibas">Basquete</label><br>
+
+            <input type="checkbox" name="nat" id="inat">
+            <label for="inat">Natação</label><br>
+
+            <input type="checkbox" name="ten" id="iten">
+            <label for="iten">Tênis</label><br>
+
+            <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"></p>
+        </fieldset>
+        <p>A cor acima vc pode escolher</p>
+        <p><input type="color" name="cor" id="icor" value="#00ff00"></p>
+        <p>Satisfação</p>
+        <p><input type="range" name="ran" id="iran" min="1" max="5" value="2"></p>
+    </form>
+</body>
+</html>
