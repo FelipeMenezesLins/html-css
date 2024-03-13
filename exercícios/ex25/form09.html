@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <style>
+        body {
+            font-family:arial,helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inputs</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+ <fieldset>
+    <legend>
+      Todos os inputs que aprendi
+    </legend>
+    <p>
+        <label for="iname">Nome</label>
+        <input type="text" name="name" id="iname">
+    </p>
+    <p>
+        <label for="inum">Número</label>
+        <input type="number" name="num" id="inum">
+    </p>
+    <p>
+        <label for="imes">Mês</label>
+        <input type="month" name="mes" id="imes">
+    </p>
+    <p>
+        <label for="idate">Data</label>
+        <input type="date" name="data" id="idate">
+    </p>
+    <p>
+        <label for="itempo">Tempo</label>
+        <input type="time" name="tempo" id="itempo">
+    </p>
+    <p>
+        <label for="iemail">E-mail</label>
+        <input type="email" name="email" id="iemail">
+    </p>
+    <p>
+        <label for="isen">Senha</label>
+        <input type="password" name="sen" id="isen">
+    </p>
+    <p>
+        <label for="ibox">box</label>
+        <input type="checkbox" name="box" id="ibox">
+    </p>
+    <p>
+        <input type="radio" name="mas" id="imas"><label for="imas">masculino</label>
+
+        <input type="radio" name="mas" id="ifem"><label for="ifem">feminino</label>
+    </p>
+    <p>
+        <label for="irange">range</label>
+        <input type="range" name="renge" id="irenge" min="0" max="10" value="5" oninput="in2.innerHTML = Number(irenge.value)">
+        <output id="in2">5
+        </output>
+    </p>
+    <p>
+        <label for="icor">cor</label>
+        <input type="color" name="cor" id="icor" value="#00ff00">
+    </p>
+    <p>
+        <label for="iest">Estados</label>
+        <select name="est" id="iest"> 
+            <optgroup label="Estados Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Estados Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="SE">Sergipe</option>
+                <option value="PE">Pernambuco</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="ipro">Profissão</label>
+        <input type="text" name="pro" id="ipro" list="PROFI">
+        <datalist id="PROFI">
+            <option value="PROF">Professor</option>
+            <option value="ADM">Admnistrador</option>
+            <option value="Devp">Programador</option>
+        </datalist>
+    </p>
+    <p>
+        <label for="itext">Área de texto</label> <br>
+        <textarea name="text" id="itext" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+ </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
